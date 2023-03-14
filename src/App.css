@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.App{
+  height: 100vh;
+
+  background: url(./components/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list{
+  display: flex;
+}
+
+ul{
+  display: flex;
+  gap: 1em;
+  padding-right: 8.8em;
+  border: 2px solid red;
+  height: 4rem;
+  padding-left: 5em;
+  text-align: center;
   align-items: center;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+li{
+  color: black;
+  list-style: none;
+}
+span{
+  margin-right: 0.3rem;
+}
+
+.line{
+  width: 45rem;
+  position: absolute;
+  margin-left: 14rem;
+  margin-top: 2.4rem;
+}
+hr{
+  background-color: rgba(255,255,255, 0.3);
+}
+
+.logo{
+  margin-top: 1.3em;
+  margin-left: 1.7em;
+}
+.section1{
+ width: auto;
+ height: auto;
+ margin-top: 7em;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.circle{
+  width: 20em;
+  height: 20em;
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.circle p {
+  font-size: 60px;
+}
+
+.text{
+  width: 65%;
+}
+.travel{
+  font-size:1.6em;
+}
+
+.space{
+  font-size: 8em;
+  font-weight: 600;
+}
+
+.tiny{
+  width: 70%;
+  font-size: 1.2em;
+}
+
+.words{
+  display: flex;
+  justify-content: end;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.explore{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
